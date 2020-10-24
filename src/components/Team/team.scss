@@ -1,0 +1,91 @@
+.CardHeader{
+    color: blanchedalmond;
+    background: linear-gradient(90deg, rgb(1, 36, 56) 0%, rgb(4, 76, 102) 18%, rgb(1, 37, 58) 100%);
+}
+.cardbg{
+    background-color: rgba(2, 24, 44, 0.9);
+    border: rgb(0, 61, 92) solid 0.2px;
+}
+.cardBody{
+    border-bottom: 1px solid rgb(0, 61, 92);
+    padding: 0.7rem;
+}
+.playerImage{
+    width: 30px;
+    height: 30px;
+}
+.leftBar{
+    margin-right: 15px;
+    flex: 1;
+}
+.rightBar{
+    flex: 1;
+}
+.playerRow{
+    display: flex;
+    flex-wrap: nowrap;
+  
+}
+.playerName{
+    margin-left:10px;
+    margin-top: 12px;
+    color: blanchedalmond;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(56, 163, 167);
+}
+.playerWrap{
+    justify-content: flex-start;
+    align-items: center;
+}
+.cardWrap{
+    margin:20px ;
+    // width: 28.2rem;
+}
+.inactives{
+    margin-left: 50%;
+}
+.opponentLogo{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.par{
+    font-size: 16px;
+    
+}
+.oposingTeam{
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    
+}
+.matchesHeader{
+    flex-wrap: nowrap;
+}
+
+.opponent{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 800px){
+    .oposingTeam{
+        flex-wrap: wrap;
+    }
+   .duration,
+   .result,
+   .leagueName {
+       display: flex;
+    // justify-content: center;
+    align-items: center;
+   }
+    .par{
+        font-size: 12px;
+    }
+    .opponent{
+        margin-right: 10px;
+    }
+    .enemyTeam{
+        font-size: 9px;
+    }
+}

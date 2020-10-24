@@ -1,0 +1,37 @@
+.teamLogo {
+  width: 100px;
+  height: 100px;
+}
+.teamHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.colImage{
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.teamStats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .colStats{
+    margin-left: 30px;
+} */
+.teamRating {
+  color: seashell;
+  font-size: 20px;
+  font-weight: 500;
+}
+.teamLosses {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+}
+.teamWins {
+  color: seagreen;
+  font-size: 20px;
+  font-weight: 500;
+}
