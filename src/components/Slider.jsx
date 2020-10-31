@@ -2,7 +2,7 @@ import React from "react";
 import {Slide} from './Slide'
 import {getDotaTeams} from '../services'
 import "./Slider.scss";
-import { Navigation } from "./Navigation";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
 import { useEffect } from "react";
 

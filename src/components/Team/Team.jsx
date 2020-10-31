@@ -13,7 +13,7 @@ import { mergeArrays } from "../../utilities/mergeArrays";
 import "./team.scss";
 import {  PlayerCard } from "./PlayerCard";
 import { TeamHeader } from "./TeamHeader";
-import { Navigation } from "../Navigation";
+
 import { FavoriteHeroes } from "./FavoriteHeroes";
 import { TeamMatches } from "./TeamMatches";
 
@@ -119,7 +119,7 @@ export const Team = () => {
   return (
     <>
     
-      
+     
       <TeamHeader teamInfo={teamInfo} />
       <Row>
       <Col  md={12} lg={6}>
