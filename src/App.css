@@ -22,7 +22,7 @@ body {
   width: 100%;
  /* overflow: hidden; */
   background-color: rgba(2, 24, 44, 1);
-  
+  overflow-x: hidden;
  color: seashell;
 }
 
