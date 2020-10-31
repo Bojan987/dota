@@ -7,13 +7,13 @@ import React from "react";
       height: 3,
       width: '90%',
       backgroundColor: "#e0e0de",
-      // marginRight:'15px'
+      
       
     }
   
     const fillerStyles = {
       height: '100%',
-      width: `${completed}%`,
+      width: `${completed<=100 ? completed : 100}%`,
       backgroundColor: bgcolor,
       borderRadius: 'inherit',
       transition: 'width 1s ease-in-out'
@@ -21,7 +21,7 @@ import React from "react";
   
     const labelStyles = {
       color: 'white',
-      // fontWeight: 'bold',
+      
       fontSize: '16px'
       
     }

@@ -1,7 +1,5 @@
 import React from "react";
 import {Slide} from './Slide'
-// import {useTilt} from '../utilities/useTilt'
-// import loginImage from "../images/loginImage.jpg";
 import {getDotaTeams} from '../services'
 import "./Slider.scss";
 import { Navigation } from "./Navigation";
@@ -15,7 +13,7 @@ const [slides,setSlides]=useState([])
 
 useEffect(()=>{
   getDotaTeams().then(res=>{
-    // console.log(res.data)
+    
     const topFifteen = res.data.slice(0,16)
     setSlides(topFifteen)
   })
@@ -45,7 +43,7 @@ useEffect(()=>{
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
 
   return (<div>
-      <Navigation/>
+      
     <div className='slideWrap'>
     <div className="slides">
       <button className='prev' onClick={() => dispatch({ type: "PREV" })} >‹</button>

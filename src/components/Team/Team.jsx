@@ -1,4 +1,4 @@
-import React, { useEffect, useState,createContext } from "react";
+import React, { useEffect, useState } from "react";
 import {Row,Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import {
@@ -28,22 +28,21 @@ export const Team = () => {
   const [allHeroes, setAllHeroes] = useState([]);
   const [matches,setMatches] = useState([])
 
-  const activePlayersContext = createContext({playerFullinfo: playerFullinfo,inactivePlayers:inactivePlayers})
   const teamId = Number(useParams().team);
 
   useEffect(() => {
     getDotaTeam(teamId).then((res) => {
-      // console.log(res.data)
+      
       setTeamInfo(res.data);
     });
     getTeamPlayers(teamId).then((res) => {
-    //   console.log(res.data);
+    
       setActivePlayers(res.data.filter((el) => el.is_current_team_member));
       setInactivePlayers(res.data.filter((el) => !el.is_current_team_member).slice(0,5))
     });
     getTeamHeroes(teamId).then((res) => {
       const topFifteen = res.data.slice(0, 10);
-      // console.log(topFifteen)
+     
       setFavoriteHeroes(topFifteen);
     });
     getTeamMatches(teamId).then(res=>{
@@ -55,9 +54,10 @@ export const Team = () => {
 
   useEffect(() => {
     getDotainfos().then((res) => {
-      //   console.log(res.data)
+      
       setAllHeroes(res.data);
     });
+    
   }, []);
 
   useEffect(() => {
@@ -80,12 +80,13 @@ export const Team = () => {
             });
           });
     }
+   
   }, [favoriteHeroes, allHeroes,inactivePlayers,proPlayerInactive]);
 
   useEffect(() => {
     activePlayers.forEach((element) => {
       getPlayer(element.account_id).then((res) => {
-        //   console.log(res.data.profile)
+        
         setProPlayer((prev) => {
           return [...prev, res.data.profile];
         });
@@ -99,7 +100,7 @@ export const Team = () => {
   useEffect(()=>{
     inactivePlayers.forEach((element) => {
         getPlayer(element.account_id).then((res) => {
-          //   console.log(res.data.profile)
+          
           setProPlayerInactive((prev) => {
             return [...prev, res.data.profile];
           });
@@ -109,16 +110,16 @@ export const Team = () => {
 
   useEffect(() => {
     if (proPlayer.length !== 0 && activePlayers !== 0) {
-      // console.log(mergeArrays(proPlayer,activePlayers))
+      
       setPlayerFullInfo(mergeArrays(proPlayer, activePlayers));
     }
-
+// eslint-disable-next-line
   }, [proPlayer]);
 
   return (
     <>
     
-      <Navigation />
+      
       <TeamHeader teamInfo={teamInfo} />
       <Row>
       <Col  md={12} lg={6}>

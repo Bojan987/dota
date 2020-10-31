@@ -1,0 +1,39 @@
+
+.doghnutCharts{
+  margin-bottom: 4rem;
+}
+.doghnutChart{
+   
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.deathsChart,
+.killsChart,
+.assistsChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 20px;
+  transform: skew(-20deg);
+  background-color: rgba(42, 169, 219,0.3);
+  font-size: 14px;
+  border:2px solid rgba(119, 249, 253, 0.8);
+  margin: 2px;
+
+}
+.deathsChart:hover,
+.killsChart:hover,
+.assistsChart:hover{
+  background-color: rgba(152, 226, 255, 0.4) ;
+  cursor: pointer;
+}
+
+.breadcrumbWrapp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-bottom: 4rem;
+}

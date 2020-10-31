@@ -1,13 +1,10 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { Card, Col, Row } from "react-bootstrap";
 import WinLose from "../../Charts/WinLose";
 import ErrorImage from './ErrorImage/tenor.gif'
 
 export const FavoriteHeroes = ({favoriteHeroes})=>{
     
-    
-    // console.log(favoriteHeroes)
   
     return (
     <div className='cardWrap'>
@@ -40,7 +37,7 @@ export const FavoriteHeroes = ({favoriteHeroes})=>{
                 </div>
               </Col>
               <Col>
-                {/* <div className="d-flex justify-content-between barDiv"> */}
+                
                 <Row className='d-flex chartRow'>
                   <div className="leftBar">
                     <WinLose bgcolor={"#6a1b9a"} completed={((Number(hero.games_played)/favoriteHeroes[0].games_played)*100).toFixed(1)} games={hero.games_played}/>
@@ -49,7 +46,7 @@ export const FavoriteHeroes = ({favoriteHeroes})=>{
                     <WinLose bgcolor={"#6a1b9a"} completed={((hero.wins/hero.games_played)*100).toFixed(1)} games={((hero.wins/hero.games_played)*100).toFixed(1)}/>
                   </div>
                   </Row>
-                {/* </div> */}
+                
               </Col>
             </Row>
             

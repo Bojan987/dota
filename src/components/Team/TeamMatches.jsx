@@ -1,7 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import WinLose from "../../Charts/WinLose";
 import ErrorImage from "./ErrorImage/tenor.gif";
 
 export const TeamMatches = ({ matches }) => {
@@ -11,7 +9,6 @@ export const TeamMatches = ({ matches }) => {
     if (!match.radiant && match.radiant_win) return "Lose";
     if (!match.radiant && !match.radiant_win) return "Win";
   };
-  // console.log(favoriteHeroes)
 
   return (
     <div className="cardWrap">
@@ -56,7 +53,7 @@ export const TeamMatches = ({ matches }) => {
                         <img
                           className="opponentLogo"
                           src={match.opposing_team_logo}
-                          alt="opponent"
+                          alt="VS"
                         />
                         <p className="enemyTeam">{match.opposing_team_name}</p>
                         </div>

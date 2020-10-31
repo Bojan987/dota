@@ -59,17 +59,44 @@ export const getTeamPlayers = (teamId)=>{
   return axios.get(`https://api.opendota.com/api/teams/${teamId}/players`)
 }
 
-export const getPlayer = (playerId)=>{
-  return axios.get(`https://api.opendota.com/api/players/${playerId}`)
-}
-
-export const getDotainfos = ()=>{
-  return axios.get('https://api.opendota.com/api/heroStats/')
-}
-
 export const getTeamHeroes = (teamId) =>{
   return axios.get(`https://api.opendota.com/api/teams/${teamId}/heroes`)
 }
 export const getTeamMatches = (teamId) =>{
   return axios.get(`https://api.opendota.com/api/teams/${teamId}/matches`)
 }
+
+export const getPlayer = (playerId)=>{
+  return axios.get(`https://api.opendota.com/api/players/${playerId}`)
+}
+
+export const getPlayerKills = (playerId) =>{
+  return axios.get(`https://api.opendota.com/api/players/${playerId}/histograms/kills`)
+}
+
+export const getPlayerDeaths = (playerId) =>{
+  return axios.get(`https://api.opendota.com/api/players/${playerId}/histograms/deaths`)
+}
+
+export const getPlayerAssists = (playerId) =>{
+  return axios.get(`https://api.opendota.com/api/players/${playerId}/histograms/assists`)
+}
+
+export const getPlayerStats = (playerID) =>{
+  return axios.get(` https://api.opendota.com/api/players/${playerID}/wl`)
+}
+
+export const getPlayerTeamMates = (playerID) =>{
+  return axios.get(`  https://api.opendota.com/api/players/${playerID}/pros`)
+}
+
+export const getPlayerRecentMatches = (playerID) =>{
+  return axios.get(`  https://api.opendota.com/api/players/${playerID}/recentMatches`)
+}
+
+export const getDotainfos = ()=>{
+  return axios.get('https://api.opendota.com/api/heroStats/')
+}
+
+
+
