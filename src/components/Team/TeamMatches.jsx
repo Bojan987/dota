@@ -23,7 +23,7 @@ export const TeamMatches = ({ matches }) => {
               <Row className="d-flex playerRow">
                 <div className="leftBar par">Duration</div>
                 <div className="leftBar par">Result</div>
-                <div className="rightBar par">Oposing Team</div>
+                <div className="rightBar par">Opponent</div>
               </Row>
             </Col>
           </Row>
