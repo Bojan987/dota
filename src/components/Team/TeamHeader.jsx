@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Col, Row,Image} from "react-bootstrap";
 import './teamHeader.css'
+import ErrorImage from "./ErrorImage/ErrorImage.jpg";
+
 export const TeamHeader = ({teamInfo})=>{
     
     const teamRating =teamInfo.rating ? Math.floor((teamInfo.rating)):0
@@ -9,7 +11,7 @@ export const TeamHeader = ({teamInfo})=>{
             
         <Row className='teamHeader'>
             <Col md={2} xs={12} className='colImage'>
-                <Image src={teamInfo.logo_url} alt='Team Logo' className='teamLogo'></Image>
+                <Image src={teamInfo.logo_url ? teamInfo.logo_url : ErrorImage } alt='Team Logo' className='teamLogo'></Image>
             </Col>
             <Col md={10} xs={12} className='colStats'>
                 <Row className='teamStats'><h3 style={{fontWeight:'600'}}>{teamInfo.name}</h3></Row>

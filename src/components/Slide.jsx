@@ -1,6 +1,7 @@
 import React from "react";
 import { useTilt } from "../utilities/useTilt";
 import {Link } from 'react-router-dom'
+import ErrorImage from "./Team/ErrorImage/ErrorImage.jpg";
 
 export function Slide({ slide, offset }) {
 
@@ -28,7 +29,7 @@ export function Slide({ slide, offset }) {
       <Link to={`/team/${team}`}><div
         className="slideContent"
         style={{
-          backgroundImage: `url('${slide.logo_url}')`,
+          backgroundImage: `url('${slide.logo_url ? slide.logo_url : ErrorImage}')`,
         }}
       >
         <div className="slideContentInner">

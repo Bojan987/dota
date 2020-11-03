@@ -2,6 +2,8 @@ import React from "react";
 import { Card,Row,Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import WinLose from "../../Charts/WinLose"
+import ErrorImage from "./ErrorImage/ErrorImage.jpg";
+
 export const InactiveTeam = ({inactivePlayers,total}) => {
   return (
     <div>
@@ -13,8 +15,8 @@ return (
  <Row className="playerRow">
    <Col xs={6}>
      <div className="d-flex  playerWrap">
-       <img src={player.img} className="playerImage" alt='Avatar' />
-       <Link to={`/player/${player.account_id}`}><p className="playerName">{player.name}</p></Link>
+       <img src={player.img ? player.img : ErrorImage } className="playerImage" alt='Avatar' />
+       <Link to={`/player/${player.account_id}`}><p className="playerName par">{`${player.name} >`}</p></Link>
      </div>
    </Col>
    <Col>

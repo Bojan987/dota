@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import ErrorImage from "./ErrorImage/tenor.gif";
+import ErrorImage from "./ErrorImage/ErrorImage.jpg";
 
 export const TeamMatches = ({ matches }) => {
   const result = (match) => {
@@ -46,7 +46,7 @@ export const TeamMatches = ({ matches }) => {
                         </p>
                       </div>
                       <div className="rightBar result">
-                        <p className="par">{result(match)}</p>
+                        <p className={result(match)==='Win'?'resWin par' : 'resLose par' }>{result(match)}</p>
                       </div>
                       <div className="rightBar playerRow d-flex opponent">
                         <div className='oposingTeam d-flex'>

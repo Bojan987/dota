@@ -21,13 +21,11 @@ import React from "react";
   
     const labelStyles = {
       color: 'white',
-      
-      fontSize: '16px'
-      
+        
     }
   
     return (<>
-    <span style={labelStyles}>{`${games}`}</span>
+    <span className='par' style={labelStyles}>{games}</span>
       <div style={containerStyles}> 
         <div style={fillerStyles}></div>
       </div>

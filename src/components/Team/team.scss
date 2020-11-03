@@ -29,10 +29,17 @@
 .playerName{
     margin-left:10px;
     margin-top: 12px;
-    color: blanchedalmond;
     font-size: 12px;
     font-weight: 400;
     color: rgb(56, 163, 167);
+}
+.heroName{
+    margin-left:10px;
+    margin-top: 12px;
+    color: blanchedalmond;
+    font-size: 12px;
+    font-weight: 400;
+   
 }
 .playerWrap{
     justify-content: flex-start;
@@ -53,7 +60,7 @@
 }
 .par{
     font-size: 16px;
-    
+   
 }
 .oposingTeam{
     justify-content: flex-start;
@@ -67,6 +74,12 @@
 
 .opponent{
     margin-right: 10px;
+}
+.resLose{
+    color: red;
+}
+.resWin{
+    color:green;
 }
 @media only screen and (max-width: 800px){
     .oposingTeam{

@@ -4,6 +4,7 @@ import WinLose from "../../Charts/WinLose";
 import "./team.scss";
 import { InactiveTeam } from "./InactiveTeam";
 import { Link } from "react-router-dom";
+import ErrorImage from "./ErrorImage/ErrorImage.jpg";
 
 export const PlayerCard = ({ activePlayers,teamInfo,playerFullinfo,inactivePlayers}) => {
   
@@ -16,12 +17,12 @@ export const PlayerCard = ({ activePlayers,teamInfo,playerFullinfo,inactivePlaye
       <Card.Header className="CardHeader">
         <Row>
           <Col xs={6}>
-            <div>Name</div>
+            <div className='par'>Name</div>
           </Col>
           <Col>
           <Row className='d-flex chartRow'>
-              <div className="leftBar">Games</div>
-              <div className="rightBar">Win Rate</div>
+              <div className="leftBar par">Games</div>
+              <div className="rightBar par">Win Rate</div>
             </Row>
           </Col>
         </Row>
@@ -34,8 +35,8 @@ export const PlayerCard = ({ activePlayers,teamInfo,playerFullinfo,inactivePlaye
             <Row className="playerRow">
               <Col xs={6}>
                 <div className="d-flex  playerWrap">
-                  <img src={player.avatarfull} className="playerImage" alt='Avatar' />
-                  <Link to={`/player/${player.account_id}`}><p className="playerName">{`${player.name}     >`}</p></Link>
+                  <img src={player.avatarfull ? player.avatarfull : ErrorImage} className="playerImage" alt='Avatar' />
+                  <Link to={`/player/${player.account_id}`}><p className="playerName par">{`${player.name}     >`}</p></Link>
                 </div>
               </Col>
               <Col>

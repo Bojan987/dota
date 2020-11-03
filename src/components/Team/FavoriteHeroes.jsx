@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Col, Row } from "react-bootstrap";
 import WinLose from "../../Charts/WinLose";
-import ErrorImage from './ErrorImage/tenor.gif'
+import ErrorImage from './ErrorImage/ErrorImage.jpg'
 
 export const FavoriteHeroes = ({favoriteHeroes})=>{
     
@@ -14,12 +14,12 @@ export const FavoriteHeroes = ({favoriteHeroes})=>{
       <Card.Header className="CardHeader">
         <Row>
           <Col xs={6}>
-            <div>Name</div>
+            <div className='par'>Name</div>
           </Col>
           <Col>
             <Row className='d-flex chartRow'>
-              <div className="leftBar">Games</div>
-              <div className="rightBar">Win Rate</div>
+              <div className="leftBar par">Games</div>
+              <div className="rightBar par">Win Rate</div>
             </Row>
           </Col>
         </Row>
@@ -33,7 +33,7 @@ export const FavoriteHeroes = ({favoriteHeroes})=>{
               <Col xs={6}>
                 <div className="d-flex  playerWrap">
                   <img src={`https://api.opendota.com${hero.img}`} className="playerImage" alt='Hero' />
-                  <p className="playerName">{hero.localized_name}</p>
+                  <p className="heroName par">{hero.localized_name}</p>
                 </div>
               </Col>
               <Col>
