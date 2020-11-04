@@ -14,12 +14,12 @@ export const PlayerTeamMates = ({playerMates}) => {
       <Card.Header className="CardHeader">
         <Row>
           <Col xs={6}>
-            <div>Name</div>
+            <div className='par'>Name</div>
           </Col>
           <Col>
           <Row className='d-flex chartRow'>
-              <div className="leftBar">Games With</div>
-              <div className="rightBar">Win Rate</div>
+              <div className="leftBar par">Games With</div>
+              <div className="rightBar par">Win Rate</div>
             </Row>
           </Col>
         </Row>
@@ -33,7 +33,7 @@ export const PlayerTeamMates = ({playerMates}) => {
               <Col xs={6}>
                 <div className="d-flex  playerWrap">
                   <img src={player.avatarfull} className="playerImage" alt='Avatar' />
-                  <a href={player.profileurl}><p className="playerName">{`${player.name}     >`}</p></a>
+                  <a href={player.profileurl}><p className="playerName par">{`${player.name}     >`}</p></a>
                 </div>
               </Col>
               <Col>

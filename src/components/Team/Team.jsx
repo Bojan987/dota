@@ -116,6 +116,7 @@ export const Team = () => {
 // eslint-disable-next-line
   }, [proPlayer]);
 
+
   return (
     <>
     

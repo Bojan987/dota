@@ -11,7 +11,7 @@ export const AssistsChart = ({playerAssists})=>{
         labels: totalAssists.slice(0,20),
         datasets: [
           {
-            label: 'Total number of games, ended with selected number of Assists',
+            label: 'Total games ended with selected Assists',
             backgroundColor: 'rgba(42, 169, 219,0.3)',
             borderColor: 'rgba(119, 249, 253, 0.8)',
             borderWidth: 1,

@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 
+
 export const Slider = () => {
  
 const [slides,setSlides]=useState([])
@@ -41,10 +42,12 @@ useEffect(()=>{
 
 
   const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+ 
 
-  return (<div>
+
+  return (<div >
       
-    <div className='slideWrap'>
+    <div className='slideWrap' >
     <div className="slides">
       <button className='prev' onClick={() => dispatch({ type: "PREV" })} >‹</button>
 
@@ -56,7 +59,7 @@ useEffect(()=>{
         return <Slide slide={slide} offset={offset} key={i} />;
       })
       }
-      <button className='next' onClick={() => dispatch({ type: "NEXT" })}>›</button>
+      <button className='next' onClick={() => dispatch({ type: "NEXT" })} >›</button>
     </div>
     </div>
     </div>

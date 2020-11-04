@@ -14,7 +14,7 @@ export const KillsChart = ({playerKills})=>{
         labels: totalKills.slice(0,20),
         datasets: [
           {
-            label: 'Total number of games, ended with selected number of Kills',
+            label: 'Total games ended with selected Kills',
             backgroundColor: 'rgba(42, 169, 219,0.3)',
             borderColor: 'rgba(119, 249, 253, 0.8)',
             borderWidth: 1,
