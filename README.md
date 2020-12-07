@@ -9,7 +9,7 @@ https://dota2-teams.netlify.app/
  2. Team Page 
     - Team info / last 15 matches played in Big Leagues 
     - Current players (active | inactive)  / click on player to see player stats
-    - 10 favorite/most played heroes - total games played with each corresponding with win rate
+    - 10 favorite/most played heroes - total games played with each corresponding player ( win rate )
 
  3. Player Page 
     - Player info / Statistics of selected player shown in charts  
