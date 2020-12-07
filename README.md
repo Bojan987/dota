@@ -13,7 +13,7 @@ https://dota2-teams.netlify.app/
 
  3. Player Page 
     - Player info / Statistics of selected player shown in charts  
-    - List of 5 players, the selected player played with the most 
+    - List of 5 players the selected player played with, the most 
 
 
 ### Technologies 
