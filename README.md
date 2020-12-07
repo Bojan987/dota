@@ -8,7 +8,7 @@ https://dota2-teams.netlify.app/
     - Pick a Dota 2 team, from selection of currently top 15 teams 
  2. Team Page 
     - Team info / last 15 matches played in Big Leagues 
-    - Current players (active|inactive)  / click on player to see player stats
+    - Current players (active | inactive)  / click on player to see player stats
     - 10 favorite/most played heroes - total games played with each corresponding with win rate
 
  3. Player Page 
