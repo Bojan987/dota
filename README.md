@@ -4,7 +4,7 @@ https://dota2-teams.netlify.app/
 ​
 ### Description
  
- All the data are from Open Dota API - Statistcs are live and show the current info about each of top 15 Teams and their corresponding members
+ All the data are from Open Dota API - Statistcs are live and show the current info about each of top 15 Teams and their respective members
 
  1. Home Page 
     - Pick a Dota 2 team, from selection of currently top 15 teams 
