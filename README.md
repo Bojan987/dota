@@ -1,68 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dota 2 - teams / players / statistcs
+https://dota2-teams.netlify.app/
 
-## Available Scripts
+​
+### Description
 
-In the project directory, you can run:
+ 1. Home Page 
+    - Pick a Dota 2 team, from selection of currently top 15 teams 
+ 2. Team Page 
+    - Team info / last 15 matches played in Big Leagues 
+    - Current players (active|inactive)  / click on player to see player stats
+    - 10 favorite/most played heroes - total games played with each corresponding with win rate
 
-### `npm start`
+ 3. Player Page 
+    - Player info / Statistics of selected player shown in charts  
+    - List of 5 players, the selected player played with the most 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Technologies 
 
-### `npm test`
+1. react 16.14.5
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. react-router-dom 16.14.5
 
-### `npm run build`
+4. axios 0.20.0
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Bootstrap 4.7.0
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+6. font-awesome 4.7.0
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. chart.js
 
-### `npm run eject`
+8. node-sass
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+9. Open Dota API 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+​
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Folder structure :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+​
 
-## Learn More
+1. Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Team :
+      1. Favorite Heroes : 10 most played heroes and their respective statistcs 
+      2. Inactive Team : List of players that used to play for this team , since team is  currently not having active players
+      3. Player Card : List of active players and their respective statistics 
+      4. Team Header : Team name , their current Win - Lose ratio and current rating
+      5. Team Matches : Teams 15 last matches played in Dota leagues (duration, result, opponent)
+      
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - Pro Players
+      1. Player Header : Player Name with respective statistics of that player ( win , lose , MMR)
+      2. Player Teammates : Players mostly played with ( total games - win rate )
+      3. Pro Player Stats : Player Statistcs shown in Charts ( Win|Lose as Radiant team , Win|Lose as Dire Team, Kills|Deaths in last 20 games) 
+        - Bar Chart showing Total games ended with selected Deaths/Kills/Assists
 
-### Code Splitting
+    - Slide : Homepage single slide 
+      Slider : Complete slider consisted of slides 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    - Utilities : 
+     
+      1. Use Tilt : Function for Slide to tilt on hover 
+      2. Merge Arrays : Function for merging data collected from Dota Api for simpler manipulation
 
-### Analyzing the Bundle Size
+    - Services : Communication with Open Dota API
+      
+      
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+​
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Installation 
 
-### Advanced Configuration
+​
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Firstly install  NodeJS (v12.14.0 or newer)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+    1. Clone the Git Repository
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    2. npm install 
+    
+    3. If necessary : 
+        - npm install react-router-dom
+        - npm install axios
+        - npm install react-bootstrap bootstrap
+        - npm i --save @fortawesome/fontawesome-svg-core
+        - npm install --save @fortawesome/free-solid-svg-icons
+        - npm install --save @fortawesome/react-fontawesome
+        - npm install --save @fortawesome/free-brands-svg-icons
+        - npm install --save @fortawesome/free-regular-svg-icons
+        - npm install chart.js --save
+        - npm install node-sass
+
+​
+`
+
+​
+
+### Starting the project 
+
+
+
+    1. ```npm start```
+
+        
